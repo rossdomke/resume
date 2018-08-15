@@ -6,61 +6,69 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ross Domke - Resume</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
 </head>
 
 <body onload="draw()">
-    <div class="bg-info text-center text-light my-4 py-2">
-        <h1 class="display-1 px-5 d-inline-block border border-top-0 border-right-0 border-left-0 m-0">ROSS DOMKE</h1><br/>
-        <h5 class="">Web Applications Developer</h5>
+    <div class="container-fluid px-0">
+        <div class="bg-info text-center text-light my-4 py-2">
+            <h1 class="display-1 px-5 d-inline-block border border-top-0 border-right-0 border-left-0 m-0 text-uppercase">Ross Domke</h1>
+            <br/>
+            <h5 class="lead text-uppercase pt-1">Software Engineer</h5>
+        </div>
     </div>
     <div class="container">
-        <h2 class="text-light bg-dark">EMPLOYMENT</h2>
-        <div class="timeline pl-4 col-12">
+        <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
+        <div class="timeline pl-4 col-12 mt-2">
             <div class="date">
                 <small class="date-label">2014 - now()</small>
                 <div class="date-text">
                     <h4 class="mb-0">Mott Community College - Web Applications Developer</h4>
-                    <p class="pl-2 pb-3">Designed and developed web applications in C# with ASP.net MVC using Microsoft SQL server database. Worked
-                        with customers to elicit and gather requirements to fit their needs. Responsible for vetting new
-                        technologies, leading team trainings, and writing documentation. Conducted code reviews utilizing
-                        our change control system as well as managing QA and production code moves. Supervised Junior Developers
-                        and guiding them to improve.</p>
+                    <p class="pl-2 pb-3">Designed and developed web applications, console utilities, in C# with ASP.net MVC using Microsoft SQL
+                        server database. Worked with customers to elicit and gather requirements to fit their needs. Responsible
+                        for vetting new technologies, leading team trainings, and writing documentation. Conducted code reviews
+                        utilizing our change control system as well as managing QA and production code moves. Supervised
+                        Junior Developers and guiding them to improve.Day to day operations consisted of designing, implementing,
+                        and maintaining many different software solutions. Depending on the requirements of the project solutions
+                        varied, but mostly consisted of MVC.net web applications, C# console applications, SSIS Packages,
+                        or a combination thereof. Many projects required close collaboration with customers and team members,
+                        which was accomplished in an agile environment. Other daily tasks included code reviews, technology
+                        research, systems setup/monitoring, team training, and mentoring. </p>
                 </div>
             </div>
             <div class="date">
                 <small class="date-label">2013 - 2014</small>
                 <div class="date-text">
                     <h4 class="mb-0">Air Advantage - Software Engineer</h4>
-                    <p class="pl-2 pb-3">Responsible for maintaining and creating database driven applications, design of internal applications,
-                        ADHOC reporting from Postgres and MySQL databases, and a wide variety of other technical tasks. Creating
-                        requirements documents, and application documentation were also regularly completed tasks.
+                    <p class="pl-2 pb-3">Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres
+                        and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing
+                        applications, and a Reporting application.
                     </p>
                 </div>
             </div>
             <div class="date">
                 <small class="date-label">2012 - 2013</small>
                 <div class="date-text">
-                    <h4 class="mb-0">Mott Community College - Asst Web Developer</h4>
-                    <p class="pl-2 pb-3">Responsible for maintaining and creating Oracle database driven web applications using PHP, HTML 5, and
-                        JavaScript. Research and build test environments for new technologies such as frameworks, and security
-                        measures. Other responsibilities such as following Project Requirement documents and creating process
-                        flowcharts were performed.</p>
+                    <h4 class="mb-0">Mott Community College - Junior Web Developer</h4>
+                    <p class="pl-2 pb-3">
+                        Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such
+                        as PHP Frameworks, Version Control Systems, and Frontend Tools. </p>
                 </div>
             </div>
             <div class="date">
                 <small class="date-label">2011 - 2012</small>
                 <div class="date-text">
                     <h4 class="mb-0">Mott Community College - Technology Extern</h4>
-                    <p class="pl-2 pb-3">One year internship position responsible for help desk support and miscellaneous tickets ranging from
-                        computer/printer repair to software help. Experience in both phone support as well as personal support.
-                        Able to image computers using both Symantec Ghost and Altiris imaging software.</p>
+                    <p class="pl-2 pb-3">
+                        One year internship position responsible for call center support and support tickets ranging from computer/printer repair
+                        to software assistance. Support was provided both in person and over the phone. Other responsibilities
+                        ranged from computer repair to machine imaging.</p>
                 </div>
             </div>
         </div>
-        <h2 class="text-light bg-dark">SKILLS</h2>
+        <h2 class="text-light bg-dark px-2">SKILLS</h2>
         <div class="col-12">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex justify-content-center">
@@ -70,22 +78,25 @@
                     <canvas id="db" width="375" height="375"></canvas>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-12 d-flex justify-content-between flex-wrap">
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">SIMPLE Design Principles</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Continuious Integration</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Object Oriented Design</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">GIT & Subversion</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Mobile First Design</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">IIS Management</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Agile</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Automated Unit Testing</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">RESTful APIs</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">SOLID Design Principles</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Continuous Integration</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Object Oriented Design</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">GIT & Subversion</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Mobile First Design</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">IIS Management</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Agile</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Static websites</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Automated Unit Testing</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">RESTful APIs</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Test Driven Development</h5>
+                    <h5 class="bg-dark text-light py-2 px-3 d-flex align-content-center m-2 font-weight-bold">Bootstrap</h5>
                 </div>
             </div>
         </div>
 
-        <h2 class="text-light bg-dark">EDUCATION</h2>
+        <h2 class="text-light bg-dark page-break mt-5 px-2">EDUCATION</h2>
         <div class="col-12 pl-4">
             <div class="row">
                 <div class="col-3 d-none d-md-flex">
@@ -114,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="text-light bg-dark">VOLUNTEER</h2>
+        <h2 class="text-light bg-dark px-2">VOLUNTEER</h2>
         <div class="col-12 pl-4">
             <div class="row">
                 <div class="col-3 d-none d-md-flex">
@@ -132,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="text-light bg-dark">CONFERENCES</h2>
+        <h2 class="text-light bg-dark px-2">CONFERENCES</h2>
         <div class="col-12 pl-4">
             <div class="row">
                 <div class="col-3 d-none d-md-flex">
@@ -199,6 +210,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
     <style>
+        .page-break {
+            page-break-before: always;
+        }
+
         .timeline>.date::before {
             content: '';
             width: 10px;
@@ -374,6 +389,10 @@
         function drawDb() {
 
         }
+    </script>
+    <script>
+        document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] +
+            ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
     </script>
 </body>
 
