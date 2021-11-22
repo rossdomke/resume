@@ -1,0 +1,48 @@
+.page-break {
+  page-break-before: always;
+}
+
+.timeline>.date::before {
+  content: '';
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  background-color: #2ecc71;
+}
+
+.timeline>.date {
+  position: relative;
+  padding: 0 0 0 120px;
+}
+
+.timeline>.date:first-child::before {
+  height: 98%;
+  top: 2%;
+}
+
+.timeline>.date:last-child::before {
+  height: 0%;
+}
+
+.date>.date-label::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #2ecc71;
+  position: absolute;
+  top: -5px;
+  left: -35px;
+  border-radius: 50%;
+}
+
+.date>.date-label {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.date-text>p {
+  margin: 0;
+}

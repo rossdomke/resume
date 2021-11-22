@@ -1,0 +1,245 @@
+{
+  "jobs": [
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Sr Programmer",
+      "startDate":"2018",
+      "endDate":"now()",
+      "description":"I do it all I swear. You need it I do it. SQL work? done. Front end coding? EZPZ. You need a utility that runs daily? What flavor you want, node.js, batch script, power shell, c# utility. I can do it all and more. You need servers spun up with a script? I'm your man. Want that in AWS? I can do that too. Need a build pipeline? Don't worry about it. Do I do any of this at Mott? Hell no, are you kidding? I don't have the time or resources to implement my dreams."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Web Applications Developer",
+      "startDate":"2014",
+      "endDate":"2018",
+      "description":"Day to day operations consisted of designing, implementing, and maintaining multiple software solutions. Depending on the requirements of the project solutions varied, but primarily consisted of MVC.net web applications, C# console applications, SSIS Packages, or a combination thereof. The lion's share of projects required close collaboration with customers and team members, which was accomplished in an agile environment. Other daily tasks included code reviews, technology research, systems setup/monitoring, team training, and mentoring."
+    },
+    {
+      "employer":"Air Advantage",
+      "location":"Frankenmuth, MI",
+      "title":"Software Engineer",
+      "startDate":"2013",
+      "endDate":"2014",
+      "description":"Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing applications, and a Reporting application."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Junior Web Developer",
+      "startDate":"2012",
+      "endDate":"2013",
+      "description":" Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such as PHP Frameworks, Version Control Systems, and Frontend Tools."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Technology Extern",
+      "startDate":"2011",
+      "endDate":"2012",
+      "description":" One year internship position responsible for call center support and support tickets ranging from computer/printer repair to software assistance. Support was provided both in person and over the phone. Other responsibilities ranged from computer repair to machine imaging."
+    }
+  ],
+  "experience": [
+    {
+      "title":"C#",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"Javascript",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"SQL",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"PHP",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Python",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"C++ & C",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"JSON & XML",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Regex",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Typescript",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"Powershell scripting",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"Bash scripting",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"SSIS (Sql Server Integration Services)",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"VS Code & VS Studio",
+      "category":"Tools",
+      "proficiency":"Advanced"
+    },{
+      "title":"GIT",
+      "category":"Tools",
+      "proficiency":"Advanced"
+    },{
+      "title":"Node & NPM",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Webpack & Rollup",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Team City",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Zabbix & Graphana",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Nuget",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"IIS Management",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Markdown",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Windows",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Linux",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Mac OS",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":".NET Framework & .NET Core",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"Vue & Vuex",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"React",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Bootstrap",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"Express JS ",
+      "category":"Framework",
+      "proficiency":"Proficient"
+    },{
+      "title":"GraphQL",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"RESTful APIs",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Skeleton CSS",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Material Design",
+      "category":"Framework",
+      "proficiency":"Basic"
+    }
+
+  ],
+  "education":[
+    {
+      "name":"University of Michigan - Flint",
+      "degrees": [
+        "Bachelors of Computer Science (Dec 2016)"
+      ],
+      "logo":"/images/uofm-flint-logo.png",
+      "logoBackground":"#03324d"
+    },
+    {
+      "name":"Mott Community College",
+      "degrees":[
+        "Associate in Applied Science, Computer Information Systems, High Honors (May 2012)",
+        "Certificate of Achievement, Computer Programming, High Honors (May 2012)",
+        "Certificate of Achievement, Computer Science, High Honors (May 2012)"
+      ],
+      "logo":"/images/mott-logo.png",
+      "logoBackground":null
+    }
+  ],
+  "volunteer":[
+    {
+      "name":"Ann Arbor Give Camp",
+      "description": "A charity event focused on creating sites for non-profit organizations allowing them to get a free and easy to manage website. This year our team renovated a site for wellspringdetroit.org. We recreated their site and converted their current email system to Google apps accounts.",
+      "logo":"/images/givecamp.png",
+      "logoBackground":null
+    }
+  ],
+  "conferences":[
+    {
+      "name":"KalamazooX",
+      "description":"KalamazooX is a conference that doesn't focus on new technologies and programming languages, but is a conference that is designed around complementing the other conferences by enabling attendees to boost their process, design, and communication skills.",
+      "logo":"/images/kalamazoox.png",
+      "logoBackground":null
+    },
+    {
+      "name":"Stir Trek",
+      "description":"Stir Trek is a one-day conference in Columbus Ohio focused on teaching software developers the latest and greatest in technologies, techniques, and tools. Talks range from understanding JavaScript Prototypal Inheritance and Windows Azure cloud services to User Experience and Design.",
+      "logo":"/images/stirtrek.png",
+      "logoBackground":"#3a3c55"
+    },
+    {
+      "name":"Visual Studio Live",
+      "description":"Visual Studio Live is a four-day conference held to improve technical skills and to educate IT professionals about upcoming technologies and techniques. Many of the talks are given by industry experts as well as the Microsoft product team members.",
+      "logo":"/images/vslivelogo.png",
+      "logoBackground":null
+    },
+    {
+      "name":"Fluent - The Web Platform",
+      "description":"Fluent is a conference organized by O'Reilly books designed to give developers working directly with the vast growing array of web technologies. The five-day conference includes a day of in-depth tutorials, two days of keynotes, and two days of hands on training. The various events range from User Experience, Version Control Practices, and many other web technology related talks.",
+      "logo":"/images/fluent.svg",
+      "logoBackground":null
+    }
+  ]
+}

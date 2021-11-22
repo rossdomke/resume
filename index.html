@@ -2,394 +2,302 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ross Domke - Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ross Domke - Resume</title>
+  <script src="https://unpkg.com/vue@3.2.22/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body onload="draw()">
+  <div id="resume">
     <div class="container-fluid px-0">
-        <div class="bg-info text-center text-light my-4 py-2">
-            <h1 class="display-1 px-5 d-inline-block border border-top-0 border-right-0 border-left-0 m-0 text-uppercase">Ross Domke</h1>
-            <br/>
-            <h5 class="lead text-uppercase pt-1">Software Engineer</h5>
-        </div>
+      <div class="bg-info text-center text-light my-4 py-2">
+        <h1 class="display-1 px-5 d-inline-block border border-top-0 border-right-0 border-left-0 m-0 text-uppercase">
+          Ross Domke
+        </h1>
+        <br />
+        <h5 class="lead text-uppercase pt-1">Software Engineer</h5>
+      </div>
     </div>
     <div class="container">
-        <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
-        <div class="timeline pl-4 col-12 mt-2">
-            <div class="date">
-                <small class="date-label">2014 - now()</small>
-                <div class="date-text">
-                    <h4 class="mb-0">Mott Community College - Web Applications Developer</h4>
-                    <p class="pl-2 pb-3">Day to day operations consisted of designing, implementing, and maintaining multiple software solutions.
-                        Depending on the requirements of the project solutions varied, but primarily consisted of MVC.net
-                        web applications, C# console applications, SSIS Packages, or a combination thereof. The lion's share
-                        of projects required close collaboration with customers and team members, which was accomplished
-                        in an agile environment. Other daily tasks included code reviews, technology research, systems setup/monitoring,
-                        team training, and mentoring. </p>
-                </div>
-            </div>
-            <div class="date">
-                <small class="date-label">2013 - 2014</small>
-                <div class="date-text">
-                    <h4 class="mb-0">Air Advantage - Software Engineer</h4>
-                    <p class="pl-2 pb-3">Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres
-                        and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing
-                        applications, and a Reporting application.
-                    </p>
-                </div>
-            </div>
-            <div class="date">
-                <small class="date-label">2012 - 2013</small>
-                <div class="date-text">
-                    <h4 class="mb-0">Mott Community College - Junior Web Developer</h4>
-                    <p class="pl-2 pb-3">
-                        Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such
-                        as PHP Frameworks, Version Control Systems, and Frontend Tools. </p>
-                </div>
-            </div>
-            <div class="date">
-                <small class="date-label">2011 - 2012</small>
-                <div class="date-text">
-                    <h4 class="mb-0">Mott Community College - Technology Extern</h4>
-                    <p class="pl-2 pb-3">
-                        One year internship position responsible for call center support and support tickets ranging from computer/printer repair
-                        to software assistance. Support was provided both in person and over the phone. Other responsibilities
-                        ranged from computer repair to machine imaging.</p>
-                </div>
-            </div>
+      <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
+      <div class="timeline pl-4 col-12 mt-2">
+        <div class="date" v-for="job in jobs">
+          <small class="date-label">{{job.startDate}} - {{job.endDate}}</small>
+          <div class="date-text">
+            <h4 class="mb-0">{{job.employer}} - {{job.title}}</h4>
+            <p class="pl-2 pb-3">{{job.description}}</p>
+          </div>
         </div>
-        <h2 class="text-light bg-dark px-2">SKILLS</h2>
-        <div class="col-12">
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <canvas id="lang" width="400" height="375"></canvas>
-                </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <canvas id="db" width="375" height="375"></canvas>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 d-flex justify-content-between flex-wrap">
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">SOLID Design Principles</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Continuous Integration</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Object Oriented Design</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">GIT & Subversion</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Mobile First Design</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">IIS Management</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Agile</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Static websites</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Automated Unit Testing</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">RESTful APIs</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Test Driven Development</h5>
-                    <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Bootstrap</h5>
-                </div>
-            </div>
+      </div>
+      <h2 class="text-light bg-dark px-2">SKILLS</h2>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <canvas id="lang" width="400" height="375"></canvas>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <canvas id="db" width="375" height="375"></canvas>
+          </div>
         </div>
+        <div class="row mt-3">
+          <div class="col-12 d-flex justify-content-between flex-wrap">
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">SOLID Design
+              Principles</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Continuous
+              Integration</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Object Oriented
+              Design</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">GIT & Subversion
+            </h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Mobile First Design
+            </h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">IIS Management</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Agile</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Static websites
+            </h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Automated Unit
+              Testing</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">RESTful APIs</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Test Driven
+              Development</h5>
+            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Bootstrap</h5>
+          </div>
+        </div>
+      </div>
 
-        <h2 class="text-light bg-dark page-break mt-5 px-2">EDUCATION</h2>
-        <div class="col-12 pl-4">
-            <div class="row">
-                <div class="col-3 d-none d-md-flex">
-                    <div class="bg-success pt-1 align-self-center col-12 text-right text-light">
-                        <h1>100%</h1>
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>University of Michigan Flint</h4>
-                    <ul>
-                        <li>Bachelors of Computer Science (Dec 2016)</li>
-                    </ul>
-                </div>
-                <div class="col-3 d-none d-md-flex">
-                    <div class="bg-success pt-1 align-self-center col-12 text-right text-light">
-                        <h1>100%</h1>
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>Mott Community College</h4>
-                    <ul>
-                        <li>Associate in Applied Science, Computer Information Systems, High Honors (May 2012)</li>
-                        <li>Certificate of Achievement, Computer Programming, High Honors (May 2012)</li>
-                        <li>Certificate of Achievement, Computer Science, High Honors (May 2012)</li>
-                    </ul>
-                </div>
-            </div>
+      <h2 class="text-light bg-dark page-break mt-5 px-2">EDUCATION</h2>
+      <div class="col-12 pl-4">
+
+        <div class="row" v-for="school in education">
+          <div class="col-3 d-none d-md-flex justify-content-center">
+            <img :alt="school.name + ' logo'" :src="school.logo" class="img-fluid"
+              :style="{'max-width': '125px', 'max-height': '125px', background: school.logoBackground || 'transparent' }">
+          </div>
+          <div class="col-12 col-md-9">
+            <h4>{{school.name}}</h4>
+            <ul>
+              <li v-for="degree in school.degrees">{{degree}}</li>
+            </ul>
+          </div>
         </div>
-        <h2 class="text-light bg-dark px-2">VOLUNTEER</h2>
-        <div class="col-12 pl-4">
-            <div class="row">
-                <div class="col-3 d-none d-md-flex">
-                    <div class="align-self-center col-12">
-                        <img src="images/givecamp.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>Ann Arbor Give Camp</h4>
-                    <p class="pl-2">
-                        A charity event focused on creating sites for non-profit organizations allowing them to get a free and easy to manage website.
-                        This year our team renovated a site for wellspringdetroit.org. We recreated their site and converted
-                        their current email system to Google apps accounts.
-                    </p>
-                </div>
+      </div>
+      <h2 class="text-light bg-dark px-2">VOLUNTEER</h2>
+      <div class="col-12 pl-4">
+        <div class="row" v-for="service in volunteer">
+          <div class="col-3 d-none d-md-flex">
+            <div class="align-self-center col-12">
+              <img :src="service.logo" class="img-fluid" :style="{background: service.logoBackground || 'transparent'}"
+                :alt="service.name + ' Logo'" />
             </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <h4>{{service.name}}</h4>
+            <p class="pl-2">
+              {{service.description}}
+            </p>
+          </div>
         </div>
-        <h2 class="text-light bg-dark px-2">CONFERENCES</h2>
-        <div class="col-12 pl-4">
-            <div class="row">
-                <div class="col-3 d-none d-md-flex">
-                    <div class="align-self-center col-12">
-                        <img src="images/kalamazoox.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>KalamazooX</h4>
-                    <p class="pl-2">
-                        Kalamzoo X is a conference that doesn't focus on new technologies and programming languages, but is a conference that is
-                        designed around complementing the other conferences by enabling attendees to boost their process,
-                        design, and communication skills.
-                    </p>
-                </div>
-                <div class="col-3 d-none d-md-flex">
-                    <div class="align-self-center col-12">
-                        <img src="images/givecamp.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>Stir Trek</h4>
-                    <p class="pl-2">
-                        Stir Trek is a one-day conference in Columbus Ohio focused on teaching software developers the latest and greatest in technologies,
-                        techniques, and tools. Talks range from understanding JavaScript Prototypal Inheritance and Windows
-                        Azure cloud services to User Experience and Design.
-                    </p>
-                </div>
-                <div class="col-3 d-none d-md-flex">
-                    <div class="align-self-center col-12">
-                        <img src="images/vslivelogo.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>Visual Studio Live</h4>
-                    <p class="pl-2">
-                        Visual Studio Live is a four-day conference held to improve technical skills and to educate IT professionals about upcoming
-                        technologies and techniques. Many of the talks are given by industry experts as well as the Microsoft
-                        product team members.
-                    </p>
-                </div>
-                <div class="col-3 d-none d-md-flex">
-                    <div class="align-self-center col-12">
-                        <img src="images/fluent.svg" class="img-fluid" alt="Responsive image">
-                    </div>
-                </div>
-                <div class="col-12 col-md-9">
-                    <h4>Fluent - The Web Platform</h4>
-                    <p class="pl-2">
-                        Fluent is a conference organized by O'Reilly books designed to give developers working directly with the vast growing array
-                        of web technologies. The five-day conference includes a day of in-depth tutorials, two days of keynotes,
-                        and two days of hands on training. The various events range from User Experience, Version Control
-                        Practices, and many other web technology related talks.
-                    </p>
-                </div>
+      </div>
+      <h2 class="text-light bg-dark px-2">CONFERENCES</h2>
+      <div class="col-12 pl-4">
+        <div class="row" v-for="conf in conferences">
+          <div class="col-3 d-none d-md-flex">
+            <div class="align-self-center col-12">
+              <img :src="conf.logo" class="img-fluid" :style="{background: conf.logoBackground || 'transparent'}"
+              :alt="conf.name + ' Logo'" />
             </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <h4>{{conf.name}}</h4>
+            <p class="pl-2">
+              {{conf.description}}
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
-    <style>
-        .page-break {
-            page-break-before: always;
-        }
-
-        .timeline>.date::before {
-            content: '';
-            width: 10px;
-            position: absolute;
-            top: 0;
-            left: 5px;
-            height: 100%;
-            background-color: #2ecc71;
-        }
-
-        .timeline>.date {
-            position: relative;
-            padding: 0 0 0 120px;
-        }
-
-        .timeline>.date:first-child::before {
-            height: 98%;
-            top: 2%;
-        }
-
-        .timeline>.date:last-child::before {
-            height: 0%;
-        }
-
-        .date>.date-label::before {
-            content: '';
-            width: 30px;
-            height: 30px;
-            background-color: #2ecc71;
-            position: absolute;
-            top: -5px;
-            left: -35px;
-            border-radius: 50%;
-        }
-
-        .date>.date-label {
-            position: absolute;
-            top: 0;
-            left: 30px;
-        }
-
-        .date-text>p {
-            margin: 0;
-        }
-    </style>
-    <script>
-        function draw() {
-            drawSkillCircle({
-                canvasId: 'lang',
-                baseRadius: 90,
-                lineWidth: 18,
-                lineDistance: 100,
-                color: "#2c3e50",
-                maxLevel: 100,
-                title: "PROGRAMMING",
-                fontFam: "Arial",
-                titleFontSize: 22,
-
-                fontColor: "white",
-                rings: [{
-                        color: "#2ecc71",
-                        text: "C# ASP.Net MVC",
-                        level: 90
-                    },
-                    {
-                        color: "#3498db",
-                        text: "JS, CSS, HTML",
-                        level: 85
-                    },
-                    {
-                        color: "#f1c40f",
-                        text: "SQL",
-                        level: 70
-                    },
-                    {
-                        color: "#e67e22",
-                        text: "PHP",
-                        level: 65
-                    },
-                    {
-                        color: "#e74c3c",
-                        text: "VB, C++, C",
-                        level: 40
-                    }
-                ]
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+  </script>
+  <script>
+    const resume = {
+      data() {
+        return {
+          test: 'message',
+          jobs: [],
+          experience: [],
+          education: [],
+          volunteer: [],
+          conferences: [],
+        };
+      },
+      mounted() {
+        this.getData();
+      },
+      methods: {
+        getData() {
+          fetch("./data.json")
+            .then(response => {
+              return response.json();
+            })
+            .then(data => {
+              this.jobs = data.jobs;
+              this.experience = data.experience;
+              this.education = data.education;
+              this.conferences = data.conferences;
+              this.volunteer = data.volunteer;
+              console.log(data);
             });
-            drawSkillCircle({
-                canvasId: "db",
-                baseRadius: 70,
-                lineWidth: 18,
-                lineDistance: 100,
-                color: "#2c3e50",
-                maxLevel: 100,
-                title: "DATABASE",
-                fontFam: "Arial",
-                titleFontSize: 22,
-                fontColor: "white",
-                rings: [{
-                        color: "#2ecc71",
-                        text: "MS SQL",
-                        level: 85
-                    },
-                    {
-                        color: "#3498db",
-                        text: "Oracle",
-                        level: 80
-                    },
-                    {
-                        color: "#f1c40f",
-                        text: "MySQL",
-                        level: 70
-                    },
-                    {
-                        color: "#e74c3c",
-                        text: "Mongo",
-                        level: 30
-                    }
-                ]
-            });
+        },
+      },
+    };
+    Vue.createApp(resume).mount('#resume');
+
+    function draw() {
+     
+      drawSkillCircle({
+        canvasId: 'lang',
+        baseRadius: 90,
+        lineWidth: 18,
+        lineDistance: 100,
+        color: "#2c3e50",
+        maxLevel: 100,
+        title: "PROGRAMMING",
+        fontFam: "Arial",
+        titleFontSize: 22,
+
+        fontColor: "white",
+        rings: [{
+            color: "#2ecc71",
+            text: "C# ASP.Net MVC",
+            level: 90
+          },
+          {
+            color: "#3498db",
+            text: "JS, CSS, HTML",
+            level: 85
+          },
+          {
+            color: "#f1c40f",
+            text: "SQL",
+            level: 70
+          },
+          {
+            color: "#e67e22",
+            text: "PHP",
+            level: 65
+          },
+          {
+            color: "#e74c3c",
+            text: "VB, C++, C",
+            level: 40
+          }
+        ]
+      });
+      drawSkillCircle({
+        canvasId: "db",
+        baseRadius: 70,
+        lineWidth: 18,
+        lineDistance: 100,
+        color: "#2c3e50",
+        maxLevel: 100,
+        title: "DATABASE",
+        fontFam: "Arial",
+        titleFontSize: 22,
+        fontColor: "white",
+        rings: [{
+            color: "#2ecc71",
+            text: "MS SQL",
+            level: 85
+          },
+          {
+            color: "#3498db",
+            text: "Oracle",
+            level: 80
+          },
+          {
+            color: "#f1c40f",
+            text: "MySQL",
+            level: 70
+          },
+          {
+            color: "#e74c3c",
+            text: "Mongo",
+            level: 30
+          }
+        ]
+      });
+    }
+
+    function drawSkillCircle(circle) {
+      var canvas = document.getElementById(circle.canvasId);
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        var centerX = (canvas.width / 2) - 15;
+        var centerY = canvas.height / 2;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, circle.baseRadius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = circle.color;
+        ctx.fill();
+        ctx.lineWidth = circle.lineWidth;
+        ctx.font = circle.titleFontSize + 'px ' + circle.fontFam;
+        ctx.fillStyle = circle.fontColor
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(circle.title, centerX, centerY);
+        ctx.textAlign = "right";
+        ctx.font = (circle.lineWidth - 1) + 'px ' + circle.fontFam;
+        for (var i = 0; i < circle.rings.length; i++) {
+
+          var theta = 2 * (circle.rings[i].level / circle.maxLevel),
+            radius = circle.baseRadius + (i + .5) * circle.lineWidth;
+
+          ctx.strokeStyle = circle.rings[i].color;
+          ctx.beginPath();
+
+          ctx.arc(centerX, centerY, radius, (2 - (11 / 6)) * Math.PI, theta * Math.PI, false);
+          ctx.stroke();
+
+          ctx.beginPath();
+          var x1 = centerX + radius * Math.cos((2 - (11 / 6)) * Math.PI) - 1,
+            y1 = centerY + radius * Math.sin((2 - (11 / 6)) * Math.PI) + 1;
+          var x2 = x1 + 55,
+            y2 = y1 - 95;
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+
+
+          //console.log(x1, y1, x2, y2);
+          ctx.stroke();
+          ctx.save();
+          ctx.translate(x2, y2 + 1);
+          // ctx.font=circle.font;
+          ctx.rotate(-Math.PI / 3);
+          ctx.fillText(circle.rings[i].text, 0, 0);
+          ctx.restore();
         }
+      }
 
-        function drawSkillCircle(circle) {
-            var canvas = document.getElementById(circle.canvasId);
-            if (canvas.getContext) {
-                var ctx = canvas.getContext("2d");
-                var centerX = (canvas.width / 2) - 15;
-                var centerY = canvas.height / 2;
-                ctx.beginPath();
-                ctx.arc(centerX, centerY, circle.baseRadius, 0, 2 * Math.PI, false);
-                ctx.fillStyle = circle.color;
-                ctx.fill();
-                ctx.lineWidth = circle.lineWidth;
-                ctx.font = circle.titleFontSize + 'px ' + circle.fontFam;
-                ctx.fillStyle = circle.fontColor
-                ctx.textAlign = "center";
-                ctx.textBaseline = "middle";
-                ctx.fillText(circle.title, centerX, centerY);
-                ctx.textAlign = "right";
-                ctx.font = (circle.lineWidth - 1) + 'px ' + circle.fontFam;
-                for (var i = 0; i < circle.rings.length; i++) {
-
-                    var theta = 2 * (circle.rings[i].level / circle.maxLevel),
-                        radius = circle.baseRadius + (i + .5) * circle.lineWidth;
-
-                    ctx.strokeStyle = circle.rings[i].color;
-                    ctx.beginPath();
-
-                    ctx.arc(centerX, centerY, radius, (2 - (11 / 6)) * Math.PI, theta * Math.PI, false);
-                    ctx.stroke();
-
-                    ctx.beginPath();
-                    var x1 = centerX + radius * Math.cos((2 - (11 / 6)) * Math.PI) - 1,
-                        y1 = centerY + radius * Math.sin((2 - (11 / 6)) * Math.PI) + 1;
-                    var x2 = x1 + 55,
-                        y2 = y1 - 95;
-                    ctx.moveTo(x1, y1);
-                    ctx.lineTo(x2, y2);
-
-
-                    //console.log(x1, y1, x2, y2);
-                    ctx.stroke();
-                    ctx.save();
-                    ctx.translate(x2, y2 + 1);
-                    // ctx.font=circle.font;
-                    ctx.rotate(-Math.PI / 3);
-                    ctx.fillText(circle.rings[i].text, 0, 0);
-                    ctx.restore();
-                }
-            }
-
-        }
-
-        function drawDb() {
-
-        }
-    </script>
-    <script>
-        document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] +
-            ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
-    </script>
+    }
+  </script>
+  <script>
+    document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] +
+      ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+  </script>
 </body>
 
 </html>
