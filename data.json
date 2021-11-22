@@ -1,4 +1,6 @@
 {
+  "name":"Ross Domke",
+  "title":"Sr Programmer",
   "jobs": [
     {
       "employer":"Mott Community College",
@@ -96,8 +98,15 @@
       "title":"Bash scripting",
       "category":"Programming",
       "proficiency":"Basic"
-    },
-    {
+    },{
+      "title":"HTML",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },{
+      "title":"CSS & SCSS",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },{
       "title":"SSIS (Sql Server Integration Services)",
       "category":"Tools",
       "proficiency":"Proficient"
@@ -185,8 +194,78 @@
       "title":"Material Design",
       "category":"Framework",
       "proficiency":"Basic"
+    },{
+      "title":"SQL Server",
+      "category":"Database",
+      "proficiency":"Proficient"
+    },{
+      "title":"Oracle",
+      "category":"Database",
+      "proficiency":"Basic"
+    },{
+      "title":"Mongo",
+      "category":"Database",
+      "proficiency":"Basic"
+    },{
+      "title":"Firebase",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - S3",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Lambda",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Lightsail",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Route 53",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Secrets Manager",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Heroku",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Netlify",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Github Pages",
+      "category":"Cloud",
+      "proficiency":"Basic"
     }
-
+  ],
+  "experienceCategories":[
+    {
+      "key":"Programming",
+      "display":"Programming Languages",
+      "bgColor":"#2ecc71"
+    },{
+      "key":"Tools",
+      "display":"Tools",
+      "bgColor":"#3498db"
+    },{
+      "key":"Framework",
+      "display":"Frameworks",
+      "bgColor":"#f1c40f"
+    },{
+      "key":"Database",
+      "display":"Database",
+      "bgColor":"#e67e22"
+    },{
+      "key":"Cloud",
+      "display":"Cloud",
+      "bgColor":"#e74c3c"
+    }
   ],
   "education":[
     {

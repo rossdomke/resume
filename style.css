@@ -46,3 +46,10 @@
 .date-text>p {
   margin: 0;
 }
+.skill-pill {
+  line-height: 1em;
+  padding: 5px 30px 10px 5px;
+  margin:5px 5px 0px 0px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
