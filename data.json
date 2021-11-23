@@ -1,45 +1,61 @@
 {
   "name":"Ross Domke",
   "title":"Sr Programmer",
+  "objective":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "jobs": [
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
       "title":"Sr Programmer",
-      "startDate":"2018",
-      "endDate":"now()",
-      "description":"I do it all I swear. You need it I do it. SQL work? done. Front end coding? EZPZ. You need a utility that runs daily? What flavor you want, node.js, batch script, power shell, c# utility. I can do it all and more. You need servers spun up with a script? I'm your man. Want that in AWS? I can do that too. Need a build pipeline? Don't worry about it. Do I do any of this at Mott? Hell no, are you kidding? I don't have the time or resources to implement my dreams."
+      "startYear":"2019",
+      "startMonth":"Oct",
+      "endYear":"",
+      "endMonth":"",
+      "positionLength": "present",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
       "title":"Web Applications Developer",
-      "startDate":"2014",
-      "endDate":"2018",
+      "startYear":"2014",
+      "startMonth":"Feb",
+      "endYear":"2019",
+      "endMonth":"Oct",
+      "positionLength": "7 yrs 10 mos",
       "description":"Day to day operations consisted of designing, implementing, and maintaining multiple software solutions. Depending on the requirements of the project solutions varied, but primarily consisted of MVC.net web applications, C# console applications, SSIS Packages, or a combination thereof. The lion's share of projects required close collaboration with customers and team members, which was accomplished in an agile environment. Other daily tasks included code reviews, technology research, systems setup/monitoring, team training, and mentoring."
     },
     {
       "employer":"Air Advantage",
       "location":"Frankenmuth, MI",
       "title":"Software Engineer",
-      "startDate":"2013",
-      "endDate":"2014",
+      "startYear":"2013",
+      "startMonth":"Jul",
+      "endYear":"2014",
+      "endMonth":"Feb",
+      "positionLength": "8 mos",
       "description":"Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing applications, and a Reporting application."
     },
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
       "title":"Junior Web Developer",
-      "startDate":"2012",
-      "endDate":"2013",
+      "startYear":"2012",
+      "startMonth":"Mar",
+      "endYear":"2013",
+      "endMonth":"Jul",
+      "positionLength": "1 yr 5 mos",
       "description":" Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such as PHP Frameworks, Version Control Systems, and Frontend Tools."
     },
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
       "title":"Technology Extern",
-      "startDate":"2011",
-      "endDate":"2012",
+      "startYear":"2011",
+      "startMonth":"Mar",
+      "endYear":"2012",
+      "endMonth":"Mar",
+      "positionLength": "1 yr",
       "description":" One year internship position responsible for call center support and support tickets ranging from computer/printer repair to software assistance. Support was provided both in person and over the phone. Other responsibilities ranged from computer repair to machine imaging."
     }
   ],

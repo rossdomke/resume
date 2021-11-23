@@ -25,15 +25,27 @@
         <h5 class="lead text-uppercase pt-1">{{resume.title}}</h5>
       </div>
     </div>
-
+    <!-- OBJECTIVE CONTAINER -->
+    <div class="container" v-if="resume.objective">
+      <h2 class="text-light bg-dark px-2">OBJECTIVE</h2>
+      <div class="col-10 mx-auto">
+        <p>{{resume.objective}}</p>
+      </div>
+    </div>
     <!-- EMPLOYMENT CONTAINER -->
     <div class="container" v-if="resume.jobs.length > 0">
       <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
       <div class="timeline pl-4 col-12 mt-2">
+        <div class="date">
+          <br/>
+        </div>
         <div class="date" v-for="job in resume.jobs">
-          <small class="date-label">{{job.startDate}} - {{job.endDate}}</small>
+          <small class="date-label">
+            {{job.startMonth}} {{job.startYear}}<br/>
+            <span class="text-secondary">{{job.positionLength}}</span>
+          </small>
           <div class="date-text">
-            <h4 class="mb-0">{{job.employer}} - {{job.title}}</h4>
+            <h3 class="mb-0">{{job.employer}} - {{job.title}}</h3>
             <p class="pl-2 pb-3">{{job.description}}</p>
           </div>
         </div>
@@ -42,9 +54,9 @@
     <!-- SKILLS CONTAINER -->
     <div class="container" v-if="resume.experience.length > 0">
       <h2 class="text-light bg-dark px-2">SKILLS</h2>
-      <div class="col-12 d-flex flex-wrap" v-for="category in resume.experienceCategories">
-        <h3 class="w-100">{{category.display}}</h3>
-        <div class="skill-pill flex-fill" :style="getExperienceStyle(category, skill)"
+      <div class="col-12 d-flex flex-wrap mt-3" v-for="category in resume.experienceCategories">
+        <h3 class="w-100 pb-0 mb-0" :style="'border-bottom: solid 3px ' + category.bgColor">{{category.display}}</h3>
+        <div class="skill-pill" :style="getExperienceStyle(category, skill)"
           v-for="skill in getExperience(category.key)">
           <b>{{skill.title}}</b><br />
           <small>{{skill.proficiency}}</small>

@@ -4,7 +4,7 @@
 
 .timeline>.date::before {
   content: '';
-  width: 10px;
+  width: 8px;
   position: absolute;
   top: 0;
   left: 5px;
@@ -23,16 +23,16 @@
 }
 
 .timeline>.date:last-child::before {
-  height: 0%;
+  height: 60%;
 }
 
 .date>.date-label::before {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   background-color: #2ecc71;
   position: absolute;
-  top: -5px;
+  top: 0px;
   left: -35px;
   border-radius: 50%;
 }
