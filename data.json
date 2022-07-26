@@ -1,8 +1,20 @@
 {
   "name":"Ross Domke",
   "title":"Sr Programmer",
-  "objective":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "objective": "",
+  "objective_old": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "jobs": [
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Acting Director of Enterprise Services",
+      "startYear":"2022",
+      "startMonth":"Feb",
+      "endYear":"",
+      "endMonth":"",
+      "positionLength": "present",
+      "description":"The role of the Acting Director of Enterprise Services is to provide leadership and oversight as the lead architect for enterprise services within the College, which includes overseeing the enterprise resource planning (ERP) system, data warehouse and all associated systems."
+    },
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
