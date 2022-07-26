@@ -1,0 +1,55 @@
+.page-break {
+  page-break-before: always;
+}
+
+.timeline>.date::before {
+  content: '';
+  width: 8px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  background-color: #2ecc71;
+}
+
+.timeline>.date {
+  position: relative;
+  padding: 0 0 0 120px;
+}
+
+.timeline>.date:first-child::before {
+  height: 98%;
+  top: 2%;
+}
+
+.timeline>.date:last-child::before {
+  height: 60%;
+}
+
+.date>.date-label::before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-color: #2ecc71;
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  border-radius: 50%;
+}
+
+.date>.date-label {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.date-text>p {
+  margin: 0;
+}
+.skill-pill {
+  line-height: 1em;
+  padding: 5px 30px 10px 5px;
+  margin:5px 5px 0px 0px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}

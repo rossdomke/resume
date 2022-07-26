@@ -1,0 +1,352 @@
+{
+  "name":"Ross Domke",
+  "title":"Sr Programmer",
+  "objective": "",
+  "objective_old": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "jobs": [
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Acting Director of Enterprise Services",
+      "startYear":"2022",
+      "startMonth":"Feb",
+      "endYear":"",
+      "endMonth":"",
+      "positionLength": "present",
+      "description":"The role of the Acting Director of Enterprise Services is to provide leadership and oversight as the lead architect for enterprise services within the College, which includes overseeing the enterprise resource planning (ERP) system, data warehouse and all associated systems."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Sr Programmer/Architect",
+      "startYear":"2019",
+      "startMonth":"Oct",
+      "endYear":"",
+      "endMonth":"",
+      "positionLength": "present",
+      "description":"As the senior Programmer the primary duties are the design, development, testing, deployment, maintenance, and archiving of software solutions. Expectations were to be the lead architect, ensuring the final product meets the overall quality and design standards of the college. Being a part of a team made mentoring and code review a regular and expected function. Other tasks completed were contributing to build vs buy discussions, including vendor software installation from initial request for proposals through systems integration. The Sr Programmer/Architect was expected to stay abreast of technology trends and to recommend additions and changes the current technology stack."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Web Applications Developer",
+      "startYear":"2014",
+      "startMonth":"Feb",
+      "endYear":"2019",
+      "endMonth":"Oct",
+      "positionLength": "7 yrs 10 mos",
+      "description":"Day to day operations consisted of designing, implementing, and maintaining multiple software solutions. Depending on the requirements of the project solutions varied, but primarily consisted of MVC.net web applications, C# console applications, SSIS Packages, or a combination thereof. The lion's share of projects required close collaboration with customers and team members, which was accomplished in an agile environment. Other daily tasks included code reviews, technology research, systems setup/monitoring, team training, and mentoring."
+    },
+    {
+      "employer":"Air Advantage",
+      "location":"Frankenmuth, MI",
+      "title":"Software Engineer",
+      "startYear":"2013",
+      "startMonth":"Jul",
+      "endYear":"2014",
+      "endMonth":"Feb",
+      "positionLength": "8 mos",
+      "description":"Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing applications, and a Reporting application."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Junior Web Developer",
+      "startYear":"2012",
+      "startMonth":"Mar",
+      "endYear":"2013",
+      "endMonth":"Jul",
+      "positionLength": "1 yr 5 mos",
+      "description":" Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such as PHP Frameworks, Version Control Systems, and Frontend Tools."
+    },
+    {
+      "employer":"Mott Community College",
+      "location":"Flint, MI",
+      "title":"Technology Extern",
+      "startYear":"2011",
+      "startMonth":"Mar",
+      "endYear":"2012",
+      "endMonth":"Mar",
+      "positionLength": "1 yr",
+      "description":" One year internship position responsible for call center support and support tickets ranging from computer/printer repair to software assistance. Support was provided both in person and over the phone. Other responsibilities ranged from computer repair to machine imaging."
+    }
+  ],
+  "experience": [
+    {
+      "title":"C#",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"Javascript",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"SQL",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },
+    {
+      "title":"PHP",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Python",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"C++ & C",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"JSON & XML",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Regex",
+      "category":"Programming",
+      "proficiency":"Proficient"
+    },
+    {
+      "title":"Typescript",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"Powershell scripting",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },
+    {
+      "title":"Bash scripting",
+      "category":"Programming",
+      "proficiency":"Basic"
+    },{
+      "title":"HTML",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },{
+      "title":"CSS & SCSS",
+      "category":"Programming",
+      "proficiency":"Advanced"
+    },{
+      "title":"SSIS (Sql Server Integration Services)",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"VS Code & VS Studio",
+      "category":"Tools",
+      "proficiency":"Advanced"
+    },{
+      "title":"GIT",
+      "category":"Tools",
+      "proficiency":"Advanced"
+    },{
+      "title":"Node & NPM",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Webpack & Rollup",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Team City",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Zabbix & Graphana",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Nuget",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"IIS Management",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Markdown",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Windows",
+      "category":"Tools",
+      "proficiency":"Proficient"
+    },{
+      "title":"Linux",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":"Mac OS",
+      "category":"Tools",
+      "proficiency":"Basic"
+    },{
+      "title":".NET Framework & .NET Core",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"Vue & Vuex",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"React",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Bootstrap",
+      "category":"Framework",
+      "proficiency":"Advanced"
+    },{
+      "title":"Express JS ",
+      "category":"Framework",
+      "proficiency":"Proficient"
+    },{
+      "title":"GraphQL",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"RESTful APIs",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Skeleton CSS",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"Material Design",
+      "category":"Framework",
+      "proficiency":"Basic"
+    },{
+      "title":"SQL Server",
+      "category":"Database",
+      "proficiency":"Proficient"
+    },{
+      "title":"Oracle",
+      "category":"Database",
+      "proficiency":"Basic"
+    },{
+      "title":"Mongo",
+      "category":"Database",
+      "proficiency":"Basic"
+    },{
+      "title":"Firebase",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - S3",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Lambda",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Lightsail",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Route 53",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"AWS - Secrets Manager",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Heroku",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Netlify",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    },{
+      "title":"Github Pages",
+      "category":"Cloud",
+      "proficiency":"Basic"
+    }
+  ],
+  "experienceCategories":[
+    {
+      "key":"Programming",
+      "display":"Programming Languages",
+      "bgColor":"#2ecc71"
+    },{
+      "key":"Tools",
+      "display":"Tools",
+      "bgColor":"#3498db"
+    },{
+      "key":"Framework",
+      "display":"Frameworks",
+      "bgColor":"#f1c40f"
+    },{
+      "key":"Database",
+      "display":"Database",
+      "bgColor":"#e67e22"
+    },{
+      "key":"Cloud",
+      "display":"Cloud",
+      "bgColor":"#e74c3c"
+    }
+  ],
+  "education":[
+    {
+      "name":"University of Michigan - Flint",
+      "degrees": [
+        "Bachelors of Computer Science (Dec 2016)"
+      ],
+      "logo":"/images/uofm-flint-logo.png",
+      "logoBackground":"#03324d"
+    },
+    {
+      "name":"Mott Community College",
+      "degrees":[
+        "Associate in Applied Science, Computer Information Systems, High Honors (May 2012)",
+        "Certificate of Achievement, Computer Programming, High Honors (May 2012)",
+        "Certificate of Achievement, Computer Science, High Honors (May 2012)"
+      ],
+      "logo":"/images/mott-logo.png",
+      "logoBackground":null
+    }
+  ],
+  "volunteer":[
+    {
+      "name":"Ann Arbor Give Camp",
+      "description": "A charity event focused on creating sites for non-profit organizations allowing them to get a free and easy to manage website. This year our team renovated a site for wellspringdetroit.org. We recreated their site and converted their current email system to Google apps accounts.",
+      "logo":"/images/givecamp.png",
+      "logoBackground":null
+    }
+  ],
+  "conferences":[
+    {
+      "name":"KalamazooX",
+      "description":"KalamazooX is a conference that doesn't focus on new technologies and programming languages, but is a conference that is designed around complementing the other conferences by enabling attendees to boost their process, design, and communication skills.",
+      "logo":"/images/kalamazoox.png",
+      "logoBackground":null
+    },
+    {
+      "name":"Stir Trek",
+      "description":"Stir Trek is a one-day conference in Columbus Ohio focused on teaching software developers the latest and greatest in technologies, techniques, and tools. Talks range from understanding JavaScript Prototypal Inheritance and Windows Azure cloud services to User Experience and Design.",
+      "logo":"/images/stirtrek.png",
+      "logoBackground":"#3a3c55"
+    },
+    {
+      "name":"Visual Studio Live",
+      "description":"Visual Studio Live is a four-day conference held to improve technical skills and to educate IT professionals about upcoming technologies and techniques. Many of the talks are given by industry experts as well as the Microsoft product team members.",
+      "logo":"/images/vslivelogo.png",
+      "logoBackground":null
+    },
+    {
+      "name":"Fluent - The Web Platform",
+      "description":"Fluent is a conference organized by O'Reilly books designed to give developers working directly with the vast growing array of web technologies. The five-day conference includes a day of in-depth tutorials, two days of keynotes, and two days of hands on training. The various events range from User Experience, Version Control Practices, and many other web technology related talks.",
+      "logo":"/images/fluent.svg",
+      "logoBackground":null
+    }
+  ]
+}
