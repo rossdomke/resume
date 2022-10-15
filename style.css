@@ -1,6 +1,11 @@
 .page-break {
   page-break-before: always;
 }
+@media print {
+  .no-print {
+    display:none;
+  }
+}
 
 .timeline>.date::before {
   content: '';

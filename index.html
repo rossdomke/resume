@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -10,9 +11,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
-<body onload="draw()">
+<body>
   <div id="resume">
     <div class="container-fluid px-0">
       <div class="bg-info text-center text-light my-4 py-2">
@@ -32,15 +34,16 @@
       </div>
     </div>
     <!-- EMPLOYMENT CONTAINER -->
-    <div class="container" v-if="resume.jobs.length > 0">
+    <div class="container" :class="{'no-print': !resume.sections.jobs.print}"
+      v-if="resume.jobs.length > 0 && resume.sections.jobs.show">
       <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
       <div class="timeline pl-4 col-12 mt-2">
         <div class="date">
-          <br/>
+          <br />
         </div>
         <div class="date" v-for="job in resume.jobs">
           <small class="date-label">
-            {{job.startMonth}} {{job.startYear}}<br/>
+            {{job.startMonth}} {{job.startYear}}<br />
             <span class="text-secondary">{{job.positionLength}}</span>
           </small>
           <div class="date-text">
@@ -50,65 +53,16 @@
         </div>
       </div>
     </div>
-    <!-- SKILLS CONTAINER -->
-    <div class="container" v-if="resume.experience.length > 0">
-      <h2 class="text-light bg-dark px-2">SKILLS</h2>
-      <div class="col-12 d-flex flex-wrap mt-3" v-for="category in resume.experienceCategories">
-        <h3 class="w-100 pb-0 mb-0" :style="'border-bottom: solid 3px ' + category.bgColor">{{category.display}}</h3>
-        <div class="skill-pill" :style="getExperienceStyle(category, skill)"
-          v-for="skill in getExperience(category.key)">
-          <b>{{skill.title}}</b><br />
-          <small>{{skill.proficiency}}</small>
-        </div>
-      </div>
-    </div>
-    <!-- SKILLS CONTAINER -->
-    <div class="container" v-if="showGraph">
-      <h2 class="text-light bg-dark px-2">SKILLS</h2>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-12 col-md-6 d-flex justify-content-center">
-            <canvas id="lang" width="400" height="375"></canvas>
-          </div>
-          <div class="col-12 col-md-6 d-flex justify-content-center">
-            <canvas id="db" width="375" height="375"></canvas>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12 d-flex justify-content-between flex-wrap">
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">SOLID Design
-              Principles</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Continuous
-              Integration</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Object Oriented
-              Design</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">GIT & Subversion
-            </h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Mobile First Design
-            </h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">IIS Management</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Agile</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Static websites
-            </h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Automated Unit
-              Testing</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">RESTful APIs</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Test Driven
-              Development</h5>
-            <h5 class="bg-dark text-light py-2 px-3 d-inline-block m-2 font-weight-bold">Bootstrap</h5>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- EDUCATION CONTAINER -->
-    <div class="container" v-if="resume.education.length > 0">
-      <h2 class="text-light bg-dark page-break mt-5 px-2">EDUCATION</h2>
+    <div class="container" :class="{'no-print': !resume.sections.education.print}"
+      v-if="resume.education.length > 0 && resume.sections.education.show">
+      <h2 class="text-light bg-dark px-2">EDUCATION</h2>
       <div class="col-12 pl-4">
 
         <div class="row" v-for="school in resume.education">
           <div class="col-3 d-none d-md-flex justify-content-center">
             <img :alt="school.name + ' logo'" :src="school.logo" class="img-fluid"
-              :style="{'max-width': '125px', 'max-height': '125px', background: school.logoBackground || 'transparent' }">
+              :style="{'max-width': '100px', 'max-height': '100px', background: school.logoBackground || 'transparent' }">
           </div>
           <div class="col-12 col-md-9">
             <h4>{{school.name}}</h4>
@@ -119,8 +73,23 @@
         </div>
       </div>
     </div>
+    <!-- SKILLS CONTAINER -->
+    <div class="container page-break mb-2" :class="{'no-print': !resume.sections.skills.print}"
+      v-if="resume.experience.length > 0 && resume.sections.skills.show">
+      <h2 class="text-light bg-dark px-2">SKILLS</h2>
+      <div class="col-12 d-flex flex-wrap mt-3" v-for="category in resume.experienceCategories">
+        <h3 class="w-100 pb-0 mb-0" :style="'border-bottom: solid 3px ' + category.bgColor">{{category.display}}</h3>
+        <div class="skill-pill" :style="getExperienceStyle(category, skill)"
+          v-for="skill in getExperience(category.key)">
+          <b>{{skill.title}}</b><br />
+          <small>{{skill.proficiency}}</small>
+        </div>
+      </div>
+    </div>
+
     <!-- VOLUNTEER CONTAINER -->
-    <div class="container" v-if="resume.volunteer.length > 0">
+    <div class="container" :class="{'no-print': !resume.sections.volunteer.print}"
+      v-if="resume.volunteer.length > 0 && resume.sections.volunteer.show">
       <h2 class="text-light bg-dark px-2">VOLUNTEER</h2>
       <div class="col-12 pl-4">
         <div class="row" v-for="service in resume.volunteer">
@@ -140,7 +109,8 @@
       </div>
     </div>
     <!-- CONFERENCES CONTAINER -->
-    <div class="container">
+    <div class="container" :class="{'no-print': !resume.sections.conferences.print}"
+      v-if="resume.conferences.length > 0 && resume.sections.conferences.show">
       <h2 class="text-light bg-dark px-2">CONFERENCES</h2>
       <div class="col-12 pl-4">
         <div class="row" v-for="conf in resume.conferences">
@@ -252,9 +222,6 @@
       mounted() {
         this.getData();
       },
-      computed: {
-
-      },
       methods: {
         getExperienceStyle(category, skill) {
           var clr = category.bgColor;
@@ -270,10 +237,6 @@
               break;
             default:
           }
-
-
-
-
           return {
             backgroundColor: clr,
             borderColor: clr,
@@ -297,149 +260,12 @@
               return response.json();
             })
             .then(data => {
-              // this.jobs = data.jobs;
-              // this.experience = data.experience;
-              // this.education = data.education;
-              // this.conferences = data.conferences;
-              // this.volunteer = data.volunteer;
-              // this.experienceCategories = data.experienceCategories
               this.resume = data;
             });
         },
       },
     };
     Vue.createApp(resume).mount('#resume');
-
-    function draw() {
-      return;
-      drawSkillCircle({
-        canvasId: 'lang',
-        baseRadius: 90,
-        lineWidth: 18,
-        lineDistance: 100,
-        color: "#2c3e50",
-        maxLevel: 100,
-        title: "PROGRAMMING",
-        fontFam: "Arial",
-        titleFontSize: 22,
-
-        fontColor: "white",
-        rings: [{
-            color: "#2ecc71",
-            text: "C# ASP.Net MVC",
-            level: 90
-          },
-          {
-            color: "#3498db",
-            text: "JS, CSS, HTML",
-            level: 85
-          },
-          {
-            color: "#f1c40f",
-            text: "SQL",
-            level: 70
-          },
-          {
-            color: "#e67e22",
-            text: "PHP",
-            level: 65
-          },
-          {
-            color: "#e74c3c",
-            text: "VB, C++, C",
-            level: 40
-          }
-        ]
-      });
-      drawSkillCircle({
-        canvasId: "db",
-        baseRadius: 70,
-        lineWidth: 18,
-        lineDistance: 100,
-        color: "#2c3e50",
-        maxLevel: 100,
-        title: "DATABASE",
-        fontFam: "Arial",
-        titleFontSize: 22,
-        fontColor: "white",
-        rings: [{
-            color: "#2ecc71",
-            text: "MS SQL",
-            level: 85
-          },
-          {
-            color: "#3498db",
-            text: "Oracle",
-            level: 80
-          },
-          {
-            color: "#f1c40f",
-            text: "MySQL",
-            level: 70
-          },
-          {
-            color: "#e74c3c",
-            text: "Mongo",
-            level: 30
-          }
-        ]
-      });
-    }
-
-    function drawSkillCircle(circle) {
-      var canvas = document.getElementById(circle.canvasId);
-      if (canvas.getContext) {
-        var ctx = canvas.getContext("2d");
-        var centerX = (canvas.width / 2) - 15;
-        var centerY = canvas.height / 2;
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, circle.baseRadius, 0, 2 * Math.PI, false);
-        ctx.fillStyle = circle.color;
-        ctx.fill();
-        ctx.lineWidth = circle.lineWidth;
-        ctx.font = circle.titleFontSize + 'px ' + circle.fontFam;
-        ctx.fillStyle = circle.fontColor
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText(circle.title, centerX, centerY);
-        ctx.textAlign = "right";
-        ctx.font = (circle.lineWidth - 1) + 'px ' + circle.fontFam;
-        for (var i = 0; i < circle.rings.length; i++) {
-
-          var theta = 2 * (circle.rings[i].level / circle.maxLevel),
-            radius = circle.baseRadius + (i + .5) * circle.lineWidth;
-
-          ctx.strokeStyle = circle.rings[i].color;
-          ctx.beginPath();
-
-          ctx.arc(centerX, centerY, radius, (2 - (11 / 6)) * Math.PI, theta * Math.PI, false);
-          ctx.stroke();
-
-          ctx.beginPath();
-          var x1 = centerX + radius * Math.cos((2 - (11 / 6)) * Math.PI) - 1,
-            y1 = centerY + radius * Math.sin((2 - (11 / 6)) * Math.PI) + 1;
-          var x2 = x1 + 55,
-            y2 = y1 - 95;
-          ctx.moveTo(x1, y1);
-          ctx.lineTo(x2, y2);
-
-
-          //console.log(x1, y1, x2, y2);
-          ctx.stroke();
-          ctx.save();
-          ctx.translate(x2, y2 + 1);
-          // ctx.font=circle.font;
-          ctx.rotate(-Math.PI / 3);
-          ctx.fillText(circle.rings[i].text, 0, 0);
-          ctx.restore();
-        }
-      }
-
-    }
-  </script>
-  <script>
-    document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] +
-      ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
   </script>
 </body>
 
