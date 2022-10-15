@@ -1,11 +1,27 @@
 .page-break {
   page-break-before: always;
 }
+.print-only {
+  display: none;
+}
 @media print {
   .no-print {
     display:none;
   }
+  .print-only {
+    display: initial !important;
+  }
+
+  .footer {
+    position:static;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+  }
 }
+
 
 .timeline>.date::before {
   content: '';
@@ -58,3 +74,4 @@
   border: solid 1px #ccc;
   border-radius: 4px;
 }
+

@@ -18,12 +18,16 @@
   <div id="resume">
     <div class="container-fluid px-0">
       <div class="bg-info text-center text-light my-4 py-2">
-        <h1 class="display-1 px-5 d-inline-block border border-top-0 border-right-0 border-left-0 m-0 text-uppercase"
+        <h1 class="display-1 px-5 border border-top-0 border-right-0 border-left-0 m-0 text-uppercase d-none d-md-inline-block"
           v-if="resume.name">
           {{resume.name}}
         </h1>
+        <h3 class="display-4 px-2 d-inline-block border border-top-0 border-right-0 border-left-0 m-0 text-uppercase d-md-none"
+          v-if="resume.name">
+          {{resume.name}}
+        </h3>
         <br />
-        <h5 class="lead text-uppercase pt-1">{{resume.title}}</h5>
+        <h5 class="lead text-uppercase pt-1 d-none d-md-block">{{resume.title}}</h5>
       </div>
     </div>
     <!-- OBJECTIVE CONTAINER -->
@@ -34,10 +38,12 @@
       </div>
     </div>
     <!-- EMPLOYMENT CONTAINER -->
-    <div class="container" :class="{'no-print': !resume.sections.jobs.print}"
+    <div class="container" :class="{'no-print': !resume.sections.jobs.print, 'page-break': resume.sections.skills.pageBreak}"
       v-if="resume.jobs.length > 0 && resume.sections.jobs.show">
       <h2 class="text-light bg-dark px-2">EMPLOYMENT</h2>
-      <div class="timeline pl-4 col-12 mt-2">
+
+      <!-- TIMELINE VIEW -->
+      <div class="timeline pl-4 col-12 mt-2 d-none d-md-block">
         <div class="date">
           <br />
         </div>
@@ -47,14 +53,27 @@
             <span class="text-secondary">{{job.positionLength}}</span>
           </small>
           <div class="date-text">
-            <h3 class="mb-0">{{job.employer}} - {{job.title}}</h3>
+            <h3 class="mb-0">{{job.title}}</h3>
+            <h4 class="mb-0 lead d-inline-block">{{job.employer}}</h4>
+            <small class="pl-3">({{job.startMonth}} {{job.startYear}} - {{job.endMonth}}<span v-if="job.endYear != ''">&nbsp;{{job.endYear}}</span>)</small>
+            <p class="pl-2 pb-3">{{job.description}}</p>
+          </div>
+        </div>
+      </div>
+      <!-- JOB LIST VIEW -->
+      <div class="jobs-list col-12 mt-2 d-md-none">
+        <div class="job" v-for="job in resume.jobs">
+          <div class="date-text">
+            <h4 class="mb-0">{{job.title}}</h3>
+            <h5 class="mb-0 lead d-inline-block">{{job.employer}} </h4>
+            <small class="pl-3">({{job.startMonth}} {{job.startYear}} - {{job.endMonth}}<span v-if="job.endYear != ''">&nbsp;{{job.endYear}}</span>)</small>
             <p class="pl-2 pb-3">{{job.description}}</p>
           </div>
         </div>
       </div>
     </div>
     <!-- EDUCATION CONTAINER -->
-    <div class="container" :class="{'no-print': !resume.sections.education.print}"
+    <div class="container" :class="{'no-print': !resume.sections.education.print, 'page-break': resume.sections.education.pageBreak}"
       v-if="resume.education.length > 0 && resume.sections.education.show">
       <h2 class="text-light bg-dark px-2">EDUCATION</h2>
       <div class="col-12 pl-4">
@@ -74,7 +93,7 @@
       </div>
     </div>
     <!-- SKILLS CONTAINER -->
-    <div class="container page-break mb-2" :class="{'no-print': !resume.sections.skills.print}"
+    <div class="container mb-2" :class="{'no-print': !resume.sections.skills.print, 'page-break': resume.sections.skills.pageBreak}"
       v-if="resume.experience.length > 0 && resume.sections.skills.show">
       <h2 class="text-light bg-dark px-2">SKILLS</h2>
       <div class="col-12 d-flex flex-wrap mt-3" v-for="category in resume.experienceCategories">
@@ -88,7 +107,7 @@
     </div>
 
     <!-- VOLUNTEER CONTAINER -->
-    <div class="container" :class="{'no-print': !resume.sections.volunteer.print}"
+    <div class="container" :class="{'no-print': !resume.sections.volunteer.print, 'page-break': resume.sections.volunteer.pageBreak}"
       v-if="resume.volunteer.length > 0 && resume.sections.volunteer.show">
       <h2 class="text-light bg-dark px-2">VOLUNTEER</h2>
       <div class="col-12 pl-4">
@@ -109,7 +128,7 @@
       </div>
     </div>
     <!-- CONFERENCES CONTAINER -->
-    <div class="container" :class="{'no-print': !resume.sections.conferences.print}"
+    <div class="container" :class="{'no-print': !resume.sections.conferences.print, 'page-break': resume.sections.conferences.pageBreak}"
       v-if="resume.conferences.length > 0 && resume.sections.conferences.show">
       <h2 class="text-light bg-dark px-2">CONFERENCES</h2>
       <div class="col-12 pl-4">
@@ -129,6 +148,11 @@
         </div>
       </div>
     </div>
+    <!-- <div class="container print-only footer">
+      <div class="col-12 text-center">
+        <p>https://resume.domke.io</p>
+      </div>
+    </div> -->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

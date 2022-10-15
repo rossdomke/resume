@@ -4,11 +4,11 @@
   "objective": "",
   "objective_old": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "sections": {
-    "jobs": { "show": true, "print": true },
-    "education": { "show": true, "print": true },
-    "skills": { "show": true, "print": true },
-    "volunteer": { "show": true, "print": false },
-    "conferences": { "show": true, "print": false }
+    "jobs": { "show": true, "print": true, "pageBreak": false },
+    "education": { "show": true, "print": true, "pageBreak": true },
+    "skills": { "show": true, "print": true, "pageBreak": false },
+    "volunteer": { "show": true, "print": false, "pageBreak": false },
+    "conferences": { "show": true, "print": false, "pageBreak": false }
   },
   "jobs": [
     {
@@ -18,7 +18,7 @@
       "startYear":"2022",
       "startMonth":"Feb",
       "endYear":"",
-      "endMonth":"",
+      "endMonth":"current",
       "positionLength": "present",
       "description":"The role of the Acting Director of Enterprise Services is to provide leadership and oversight as the lead architect for enterprise services within the College, which includes overseeing the enterprise resource planning (ERP) system, data warehouse and all associated systems."
     },
@@ -29,7 +29,7 @@
       "startYear":"2019",
       "startMonth":"Oct",
       "endYear":"",
-      "endMonth":"",
+      "endMonth":"current",
       "positionLength": "present",
       "description":"As the senior Programmer the primary duties are the design, development, testing, deployment, maintenance, and archiving of software solutions. Expectations were to be the lead architect, ensuring the final product meets the overall quality and design standards of the college. Being a part of a team made mentoring and code review a regular and expected function. Other tasks completed were contributing to build vs buy discussions, including vendor software installation from initial request for proposals through systems integration. The Sr Programmer/Architect was expected to stay abreast of technology trends and to recommend additions and changes the current technology stack."
     },
