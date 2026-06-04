@@ -28,6 +28,7 @@
         </h3>
         <br />
         <h5 class="lead text-uppercase pt-1 d-none d-md-block">{{resume.title}}</h5>
+        <h6 class="lead pt-1">{{resume.location}} &middot; <a :href="`mailto:${resume.social?.email}`" class="text-light">{{resume.social?.email}}</a> &middot; <a :href="resume.social?.linkedin" target="_blank" class="text-light no-print">LinkedIn</a> </h6>
       </div>
     </div>
     <!-- OBJECTIVE CONTAINER -->
@@ -56,7 +57,7 @@
             <h3 class="mb-0">{{job.title}}</h3>
             <h4 class="mb-0 lead d-inline-block">{{job.employer}}</h4>
             <small class="pl-3">({{job.startMonth}} {{job.startYear}} - {{job.endMonth}}<span v-if="job.endYear != ''">&nbsp;{{job.endYear}}</span>)</small>
-            <p class="pl-2 pb-3">{{job.description}}</p>
+            <p class="pl-2 pb-3" v-html="job.description"></p>
           </div>
         </div>
       </div>
