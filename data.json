@@ -144,7 +144,7 @@
     },{
       "title":"SSIS (Sql Server Integration Services)",
       "category":"Tools",
-      "proficiency":"Proficient"
+      "proficiency":"Advanced"
     },{
       "title":"VS Code & VS Studio",
       "category":"Tools",
@@ -284,7 +284,7 @@
     },{
       "title":"Ellucian Colleague",
       "category":"Vendor",
-      "proficiency":"Proficient"
+      "proficiency":"Advanced"
     },{
       "title":"IBM Cognos",
       "category":"Vendor",
@@ -292,7 +292,7 @@
     },{
       "title":"Google Workspace",
       "category":"Vendor",
-      "proficiency":"Advanced"
+      "proficiency":"Proficient"
     },{
       "title":"Microsoft 365",
       "category":"Vendor",
