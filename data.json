@@ -1,6 +1,11 @@
 {
   "name":"Ross Domke",
   "title":"Director of Enterprise Architecture",
+  "location": "Flint, MI",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/rossdomke/",
+    "email": "connect@domke.io"
+  },
   "objective": "",
   "objective_old": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "sections": {
@@ -20,7 +25,7 @@
       "endYear":"",
       "endMonth":"current",
       "positionLength": "present",
-      "description":"Lead strategic planning, architecture, and operational oversight for enterprise systems and services across the College, including the ERP/SIS platform, data warehouse, reporting platforms, integrations, and related administrative systems. Serve as the lead enterprise architect for core institutional systems, partnering with academic, student services, financial, and operational departments to align technology solutions with institutional goals. Led the College through a major SaaS migration of its ERP/SIS platform, coordinating cross-functional planning, system readiness, stakeholder engagement, and operational transition. Drive business process improvement, data-informed decision-making, system reliability, and secure delivery of enterprise services.\n\nServed as Acting Chief Technology Officer during an institutional leadership transition, providing interim oversight for technology operations, enterprise systems, and IT leadership while the College completed its search for a long-term appointment."
+      "description":"Lead strategic planning, architecture, and operational oversight for enterprise systems and services across the College, including the ERP/SIS platform, data warehouse, reporting platforms, integrations, and related administrative systems. Serve as the lead enterprise architect for core institutional systems, partnering with academic, student services, financial, and operational departments to align technology solutions with institutional goals. Led the College through a major SaaS migration of its ERP/SIS platform, coordinating cross-functional planning, system readiness, stakeholder engagement, and operational transition. Drive business process improvement, data-informed decision-making, system reliability, and secure delivery of enterprise services.<br/><br/><small>Served as Acting Chief Technology Officer during an institutional leadership transition, providing interim oversight for technology operations, enterprise systems, and IT leadership while the College completed its search for a long-term appointment.</small>"
     },
     {
       "employer":"Mott Community College",
