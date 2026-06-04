@@ -14,13 +14,13 @@
     {
       "employer":"Mott Community College",
       "location":"Flint, MI",
-      "title":"Acting Director of Enterprise Services",
+      "title":"Director of Enterprise Architecture",
       "startYear":"2022",
       "startMonth":"Feb",
       "endYear":"",
       "endMonth":"current",
       "positionLength": "present",
-      "description":"The role of the Acting Director of Enterprise Services is to provide leadership and oversight as the lead architect for enterprise services within the College, which includes overseeing the enterprise resource planning (ERP) system, data warehouse and all associated systems."
+      "description":"Lead strategic planning, architecture, and operational oversight for enterprise systems and services across the College, including the ERP/SIS platform, data warehouse, reporting platforms, integrations, and related administrative systems. Serve as the lead enterprise architect for core institutional systems, partnering with academic, student services, financial, and operational departments to align technology solutions with institutional goals. Led the College through a major SaaS migration of its ERP/SIS platform, coordinating cross-functional planning, system readiness, stakeholder engagement, and operational transition. Drive business process improvement, data-informed decision-making, system reliability, and secure delivery of enterprise services."
     },
     {
       "employer":"Mott Community College",
@@ -28,10 +28,10 @@
       "title":"Sr Programmer/Architect",
       "startYear":"2019",
       "startMonth":"Oct",
-      "endYear":"",
-      "endMonth":"current",
-      "positionLength": "present",
-      "description":"As the senior Programmer the primary duties are the design, development, testing, deployment, maintenance, and archiving of software solutions. Expectations were to be the lead architect, ensuring the final product meets the overall quality and design standards of the college. Being a part of a team made mentoring and code review a regular and expected function. Other tasks completed were contributing to build vs buy discussions, including vendor software installation from initial request for proposals through systems integration. The Sr Programmer/Architect was expected to stay abreast of technology trends and to recommend additions and changes the current technology stack."
+      "endYear":"2022",
+      "endMonth":"Feb",
+      "positionLength": "2 yrs 4 mos",
+      "description":"Led the design, development, testing, deployment, maintenance, and lifecycle management of enterprise software solutions. Served as a lead technical architect, ensuring applications met institutional standards for quality, reliability, security, maintainability, and alignment with the College’s technology strategy. Mentored developers through code reviews, technical guidance, and collaborative problem-solving to strengthen development practices and solution quality. Contributed to build-versus-buy evaluations, vendor software selection, implementation planning, and systems integration from request for proposal through deployment. Evaluated emerging technology trends and recommended improvements to the College’s application architecture, development practices, and technology stack."
     },
     {
       "employer":"Mott Community College",
@@ -42,7 +42,7 @@
       "endYear":"2019",
       "endMonth":"Oct",
       "positionLength": "7 yrs 10 mos",
-      "description":"Day to day operations consisted of designing, implementing, and maintaining multiple software solutions. Depending on the requirements of the project solutions varied, but primarily consisted of MVC.net web applications, C# console applications, SSIS Packages, or a combination thereof. The lion's share of projects required close collaboration with customers and team members, which was accomplished in an agile environment. Other daily tasks included code reviews, technology research, systems setup/monitoring, team training, and mentoring."
+      "description":"Developed and maintained enterprise software solutions that supported College operations, improved business processes, and enhanced access to institutional systems and data. Designed and delivered MVC.NET web applications, C# console applications, SSIS packages, and integrated solutions tailored to departmental and institutional needs. Worked closely with customers, stakeholders, and development team members in an agile environment to define requirements, refine solutions, and deliver reliable applications. Supported application quality and team development through code reviews, technology research, system setup and monitoring, training, and mentoring."
     },
     {
       "employer":"Air Advantage",
@@ -53,7 +53,7 @@
       "endYear":"2014",
       "endMonth":"Feb",
       "positionLength": "8 mos",
-      "description":"Main Responsibilities were for maintaining existing PHP applications and ADHOC reporting from Postgres and MySQL databases. While here we implemented a Laravel Dashboard, Unified branding for existing applications, and a Reporting application."
+      "description":"Maintained PHP applications and developed ad hoc reports using PostgreSQL and MySQL databases. Contributed to the implementation of a Laravel dashboard, unified application branding, and a reporting application to improve usability, consistency, and access to operational data."
     },
     {
       "employer":"Mott Community College",
@@ -64,7 +64,7 @@
       "endYear":"2013",
       "endMonth":"Jul",
       "positionLength": "1 yr 5 mos",
-      "description":" Responsible for maintaining PHP web applications using an Oracle database. Experimenting and testing new technologies, such as PHP Frameworks, Version Control Systems, and Frontend Tools."
+      "description":"Maintained PHP web applications supported by Oracle databases. Researched, tested, and evaluated emerging development tools and practices, including PHP frameworks, version control systems, and front-end technologies."
     },
     {
       "employer":"Mott Community College",
@@ -75,7 +75,7 @@
       "endYear":"2012",
       "endMonth":"Mar",
       "positionLength": "1 yr",
-      "description":" One year internship position responsible for call center support and support tickets ranging from computer/printer repair to software assistance. Support was provided both in person and over the phone. Other responsibilities ranged from computer repair to machine imaging."
+      "description":"Provided call center and technical support for faculty, staff, and students, including computer and printer troubleshooting, software assistance, hardware repair, and workstation imaging. Delivered support both in person and over the phone while developing a foundation in customer service, technical problem-solving, and campus technology operations."
     }
   ],
   "experience": [
